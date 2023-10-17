@@ -32,5 +32,12 @@ Ketika menggunakan clearfix, biasanya menambahkannya sebagai kelas pada elemen y
 
 ![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/036c9c7e-e7c4-45f2-8558-7aee285f2907)
 
+### OUTPUT
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/56508ad0-7bd7-46e3-a87b-393418f1a977)
+
+
+
+
 
 
