@@ -36,6 +36,249 @@ Ketika menggunakan clearfix, biasanya menambahkannya sebagai kelas pada elemen y
 
 ![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/56508ad0-7bd7-46e3-a87b-393418f1a977)
 
+# MEMBUAT LAYOUT SEDERHANA
+
+## 1. Buat folder HTML baru dengan nama `lab4_layout` dan file CSS `style.css`
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/d820483a-8b0a-4969-a169-2bf4d05f2d7f)
+
+## 2. Tuliskan Code berikut ini:
+
+### CODE HTML
+```
+<header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav>
+        <a href="home.html" class="active">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <section iid="hero"></section>
+      <section id="wrapper">
+        <section id="main"></section>
+        <aside id="sidebar"></aside>
+      </section>
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+```
+
+### OUTPUT
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/05d28349-f15b-48f0-95d7-54a914e608e5)
+
+### CODE CSS
+
+```
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+}
+
+#container {
+  width: 980px;
+  margin: 0 auto;
+  box-shadow: 0 0 1em #cccccc;
+}
+
+/* header */
+header {
+  padding: 20 px;
+}
+
+header h1 {
+  margin: 20px 10px;
+  color: #b5b5b5;
+}
+```
+
+### OUTPUT
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/b8606280-4530-4e78-a43a-b7051550a7fa)
+
+## 2. Membuat Navigasi
+
+### CODE CSS:
+
+```
+/* navigasi */
+nav {
+  display: block;
+  background-color: #1f5faa;
+}
+
+nav a {
+  padding: 15px 30px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #2b83ea;
+}
+```
+
+### OUTPUT:
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/b23aba3c-566e-439b-8562-71b103fde886)
+
+## 3. Membuat Hero Panel
+
+### CODE HTML:
+
+```
+<section id="hero">
+        <h1>Hello World!</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          lorem elit, iaculis innisl volutpat, malesuada tincidunt arcu. Proin
+          in leo fringilla, vestibulum mi porta, faucibus felis. Integer
+          pharetra est nunc, nec pretium nunc pretium ac.
+        </p>
+        <a href="home.html" class="btn btn-large">Learn more &raquo;</a>
+      </section>
+```
+
+### CODE CSS:
+
+```
+/* Hero Panel */
+#hero {
+  background-color: #e4e4e5;
+  padding: 50px 20px;
+  margin-bottom: 20px;
+}
+#hero h1 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+#hero p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 25px;
+}
+```
+
+### OUTPUT:
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/bb85dc14-a3d7-442f-a74b-9caa25212674)
+
+## 4. Mengatur Layout Main Dan SiDebar
+
+```
+/* main content */
+#wrapper {
+  margin: 0;
+}
+#main {
+  float: right;
+  width: 640px;
+  padding: 20px;
+}
+/* sidebar area */
+#sidebar {
+  float: right;
+  width: 260px;
+  padding: 20px;
+}
+```
+
+## 5. Membuat Sidebar Widget
+
+### CODE HTML:
+
+```
+<aside id="sidebar">
+        <div class="widget-box">
+          <h3 class="title">Widget Header</h3>
+          <ul>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+          </ul>
+        </div>
+        <div class="widget-box">
+          <h3 class="title">Widget Text</h3>
+          <p>
+            Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt
+            arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis.
+            Integer pharetra est nunc, nec pretium nunc pretium ac.
+          </p>
+        </div>
+      </aside>
+```
+
+### CODE CSS:
+
+```
+/* widget */
+.widget-box {
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+.widget-box .title {
+  padding: 10px 16px;
+  background-color: #428bca;
+  color: #fff;
+}
+.widget-box ul {
+  list-style-type: none;
+}
+.widget-box li {
+  border-bottom: 1px solid #eee;
+}
+.widget-box li a {
+  padding: 10px 16px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+.widget-box li:hover a {
+  background-color: #eee;
+}
+.widget-box p {
+  padding: 15px;
+  line-height: 25px;
+}
+```
+
+### OUTPUT:
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/1a861eed-499d-438d-837c-1b059fa046a7)
+
+## 6. Mengatur Footer
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
