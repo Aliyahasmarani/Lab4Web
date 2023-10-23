@@ -385,6 +385,27 @@ box img {
 
 ![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/a0a35cbc-d301-4187-b79c-a3ab9ae8dfc9)
 
+## 8. Menambahkan Content Artikel
+
+Selanjutnya membuat content artikel. Tambahkan HTML berikut pada main content.
+
+### CODE HTML:
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/994e8f18-fcd0-4614-a179-552d16312942)
+
+### CODE CSS:
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/1f56d404-7162-49b1-a015-22df4426e10b)
+
+### OUTPUT
+
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/0706ca7c-1b2d-4b7c-b9de-986bf0698db6)
+
+# PERTANYAAN DAN TUGAS
+
+
+
+
 
 
 
