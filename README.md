@@ -403,6 +403,8 @@ Selanjutnya membuat content artikel. Tambahkan HTML berikut pada main content.
 
 # PERTANYAAN DAN TUGAS
 
+Maaf ya pak, untuk tugas yang ini masih saya edit - edit. nanti kalau sudah rapih saya kirim. terima kasih pak
+
 
 
 
