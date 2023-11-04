@@ -403,7 +403,236 @@ Selanjutnya membuat content artikel. Tambahkan HTML berikut pada main content.
 
 # PERTANYAAN DAN TUGAS
 
-Maaf ya pak, untuk tugas yang ini masih saya edit - edit. nanti kalau sudah rapih saya kirim. terima kasih pak
+## 1. Tambahkan Layout Untuk Menu About
+Berikut Saya Membuat Code Sebagai Berikut:
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      line-height: 1;
+      font-size: 100%;
+      font-family: "Open Sans", sans-serif;
+      color: #5a5a5a;
+    }
+    #container {
+      max-width: 980px;
+      margin: 0 auto;
+      box-shadow: 0 0 1em #cccccc;
+      padding: 20px;
+    }
+    .center-image {
+      text-align: center;
+    }
+
+    .center-image img {
+      display: block;
+      margin: 0 auto;
+      width: 20%;
+    }
+    #portfolio {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    #portfolio h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .portfolio-item {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+    }
+
+    .portfolio-item p {
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .entry img {
+      max-width: 20%; /* Mengatur ukuran gambar di dalam artikel */
+    }
+  </style>
+  <body>
+    <div id="container">
+      <header>
+        <h1>ABOUT ME</h1>
+      </header>
+      <nav>
+        <a href="lab4_home.html">Home</a>
+        <a href="lab4_artikel.html">Artikel</a>
+        <a href="lab4_about.html" class="active">About</a>
+        <a href="lab4_contact.html">Kontak</a>
+      </nav>
+      <section id="me">
+        <h1>WELCOME TO THE WORLD OF RANI!</h1>
+      </section>
+      <section id="portfolio">
+        <div class="center-image">
+          <h2>MY HOBIE</h2>
+          <img src="me1.jpeg" alt="" class="image-circle" />
+        </div>
+        <article class="entry">
+          <h2>THE FIRST TIME I PAINTED ON THE BEACH</h2>
+          <img src="pantai.jpeg" alt="" />
+          <p>
+            Pada waktu itu, saya dan keluarga sedang berlibur di Pantai Pasir
+            Putih Subang. Dan memang saya sudah berniat dari rumah ingin sekali
+            melukis di pinggir pantainya langsung. saya melukis dengan ditemani
+            suara ombak, angin, dll. dikit demi sedikit cat saya membasahi
+            kertas. tak terasa bahwa gambar pantai yang ada di depan mata saya
+            sudah terlukis di kertas ini.
+          </p>
+        </article>
+        <hr class="divider" />
+        <article class="entry">
+          <h2>SECONDLY I PAINTED THE TRAIN</h2>
+          <img src="train.jpeg" alt="" class="right-img" />
+          <p>
+            Pada waktu itu mengapa saya melukis kerta ini? karna saya gabut
+            sebenernya. saya dirumah sedang sendirian . ayah, bunda, dan adly
+            semuanya sedang berada diluar rumah. maka nya dari situ berniat
+            untuk melukis kereta ini. ya walaupun belum terlalu sempurna dan
+            bagus, tapi saya bangga dengan diri saya.
+          </p>
+        </article>
+      </section>
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
+```
+## Output 
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/503117a3-59de-4b9b-b9cc-2bc94750de11)
+
+## Tambahkan Layout Untuk Menu Contact
+
+Saya Membuat Code Sebagai Berikut:
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      line-height: 1;
+      font-size: 100%;
+      font-family: "Open Sans", sans-serif;
+      color: #5a5a5a;
+    }
+
+    #container {
+      max-width: 980px;
+      margin: 0 auto;
+      box-shadow: 0 0 1em #cccccc;
+      padding: 20px;
+    }
+
+    .center-image {
+      text-align: center;
+    }
+
+    .center-image img {
+      display: block;
+      margin: 0 auto;
+      width: 20%;
+    }
+
+    #portfolio {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    #portfolio h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .portfolio-item {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .portfolio-item img {
+      max-width: 50%; /* Mengatur lebar gambar menjadi 50% dari lebar aslinya */
+      display: block; /* Membuat gambar menjadi blok untuk menghindari perbedaan tinggi */
+      margin: auto; /* Menengahkan gambar di dalam container */
+    }
+
+    .portfolio-item p {
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .item-content {
+      display: inline-block; /* Menempatkan item-content dalam satu baris */
+      width: 50%; /* Mengatur lebar item-content */
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <header>
+        <h1>CONTACT ME</h1>
+      </header>
+      <nav>
+        <a href="lab4_home.html">Home</a>
+        <a href="lab4_artikel.html">Artikel</a>
+        <a href="lab4_about.html">About</a>
+        <a href="lab4_contact.html" class="active">Kontak</a>
+      </nav>
+      <section id="me">
+        <h1>WELCOME TO THE WORLD OF RANI!</h1>
+      </section>
+      <section id="portfolio">
+        <div class="center-image">
+          <h2>MY CONTACT</h2>
+          <img src="me1.jpeg" alt="" class="image-circle" />
+        </div>
+        <div class="portfolio-item">
+          <div class="item-content">
+            <h2>My Personal Email</h2>
+            <br />
+            <img src="email.jpeg" /> <br />
+            <img src="ig2.jpeg" alt="Pantai" />
+            <p>Instagram utama saya</p>
+            <br />
+          </div>
+          <div class="item-content">
+            <img src="ig1.jpeg" alt="Kereta" class="right-img" />
+            <p>Instagram Untuk Karya Saya</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
+```
+
+## Output
+![image](https://github.com/Aliyahasmarani/Lab4Web/assets/115197672/6c24d271-9259-4042-96af-aa0d60c33850)
 
 
 
